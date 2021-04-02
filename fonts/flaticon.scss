@@ -1,0 +1,65 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?af39cf11e8316f0c57e0af7fc3a2244c") format("truetype"),
+url("./flaticon.woff?af39cf11e8316f0c57e0af7fc3a2244c") format("woff"),
+url("./flaticon.woff2?af39cf11e8316f0c57e0af7fc3a2244c") format("woff2"),
+url("./flaticon.eot?af39cf11e8316f0c57e0af7fc3a2244c#iefix") format("embedded-opentype"),
+url("./flaticon.svg?af39cf11e8316f0c57e0af7fc3a2244c#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "computer": "\f101",
+    "digital-marketing": "\f102",
+    "left-arrow": "\f103",
+    "link": "\f104",
+    "right-arrow": "\f105",
+    "seo": "\f106",
+    "settings": "\f107",
+    "ux": "\f108",
+    "web-design": "\f109",
+    "zoom": "\f10a",
+);
+
+.flaticon-computer:before {
+    content: map-get($flaticon-map, "computer");
+}
+.flaticon-digital-marketing:before {
+    content: map-get($flaticon-map, "digital-marketing");
+}
+.flaticon-left-arrow:before {
+    content: map-get($flaticon-map, "left-arrow");
+}
+.flaticon-link:before {
+    content: map-get($flaticon-map, "link");
+}
+.flaticon-right-arrow:before {
+    content: map-get($flaticon-map, "right-arrow");
+}
+.flaticon-seo:before {
+    content: map-get($flaticon-map, "seo");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon-map, "settings");
+}
+.flaticon-ux:before {
+    content: map-get($flaticon-map, "ux");
+}
+.flaticon-web-design:before {
+    content: map-get($flaticon-map, "web-design");
+}
+.flaticon-zoom:before {
+    content: map-get($flaticon-map, "zoom");
+}
